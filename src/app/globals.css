@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  
+  /* Seed Neutrals */
+  --seed-warm-white: #FEFCF8;
+  --seed-light-grey: #F5F5F0;
+  --seed-mid-grey: #8B8B8B;
+  --seed-dark-charcoal: #1A1A1A;
+  --seed-deep-black: #0A0A0A;
+
+  /* Product Accents */
+  --product-setheum: #00D4AA;
+  --product-ceaph: #6366F1;
+  --product-alif: #F59E0B;
+  --product-buidl: #EF4444;
+  --product-chauffeur: #8B5CF6;
+
+  --spacing-base: 8px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-seed-warm-white: var(--seed-warm-white);
+  --color-seed-light-grey: var(--seed-light-grey);
+  --color-seed-mid-grey: var(--seed-mid-grey);
+  --color-seed-dark-charcoal: var(--seed-dark-charcoal);
+  --color-seed-deep-black: var(--seed-deep-black);
+
+  --color-product-setheum: var(--product-setheum);
+  --color-product-ceaph: var(--product-ceaph);
+  --color-product-alif: var(--product-alif);
+  --color-product-buidl: var(--product-buidl);
+  --color-product-chauffeur: var(--product-chauffeur);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  --spacing-micro: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 96px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0A0A0A;
+    --foreground: #FFFFFF;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
