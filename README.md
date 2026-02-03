@@ -1,3 +1,3 @@
-# Setheum
+# Setheum Website
 
-setheum.com
+setheum.com website
